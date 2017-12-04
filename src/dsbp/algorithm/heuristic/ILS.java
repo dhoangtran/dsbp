@@ -60,16 +60,6 @@ public class ILS extends Heuristic {
     }
 
     /**
-     * Adds a Move (neighborhood) to the collection of possible neighborhoods for the local search.
-     *
-     * @param move the move to be added.
-     */
-    public void addMove(Move move) {
-        super.addMove(move);
-        heuristic.addMove(move);
-    }
-
-    /**
      * Gets the total number of iterations performed.
      *
      * @return the total number of iterations performed.

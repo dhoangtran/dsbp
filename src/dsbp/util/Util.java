@@ -76,8 +76,8 @@ public class Util {
         if (output != null) {
             output.printf("    | %8s | %8s | %8f | %8f | %10.2f | %s\n",
               longToString(nIters),
-              Main.bestKnown == Integer.MAX_VALUE ? "-" : String.format("%8.2f",
-                100. * ( double ) (solution.getTotalCost() - Main.bestKnown) / ( double ) Main.bestKnown),
+              "-", //Main.bestKnown == Integer.MAX_VALUE ? "-" : String.format("%8.2f",
+              //  100. * ( double ) (solution.getTotalCost() - Main.bestKnown) / ( double ) Main.bestKnown),
               bestSolution.getTotalCost(), solution.getTotalCost(),
               (System.currentTimeMillis() - Main.startTimeMillis) / 1000.0, special
             );
