@@ -3,7 +3,6 @@ package dsbp.algorithm.heuristic;
 import java.io.*;
 import java.util.*;
 
-import dsbp.algorithm.neighborhood.*;
 import dsbp.model.*;
 import dsbp.util.*;
 

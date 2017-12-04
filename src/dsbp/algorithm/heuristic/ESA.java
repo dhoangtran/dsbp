@@ -25,30 +25,40 @@ public class ESA extends Heuristic {
 	private final static double EXTSTP = 1.2; 
 	private final static double SHRSTP = 0.8;
 	// lower and upper bounds
+	@SuppressWarnings("unused")
 	private int[] X0MIN;
+	@SuppressWarnings("unused")
 	private int[] X0MAX;
 	// end of temperature state parameters 
+	@SuppressWarnings("unused")
 	private int N1;
 	private int N2;
 	private double TMPINI;
 	// stopping tests parameters
+	@SuppressWarnings("unused")
 	private double EPSREL = 1.0D-06;
+	@SuppressWarnings("unused")
 	private double EPSABS = 1.0D-06;//1.0D-08;
+	@SuppressWarnings("unused")
 	private double NFMAX = 5000;
 	// temperature adjustment rule parameters
 	private final static double RMXTMP = 0.99;
 	private final static double RMITMP = 0.1;
 	// step vector adjustment rule parameters
 	private int[] STPMST;
+	@SuppressWarnings("unused")
 	private double[] ROSTEP;
 	//private int RATMIN;
 	//private int RATMAX;
 	//private int EXTSTP;
 	//private int SHRSTP;
 	// number of FOBJ evaluations
+	@SuppressWarnings("unused")
 	private int NFOBJ;
+	@SuppressWarnings("unused")
 	private int MVOKST;
 	private int[] MOKST;
+	@SuppressWarnings("unused")
 	private int NMVUST;
 	private int NMVST;
 	private double SDGYUP;
@@ -99,7 +109,8 @@ public class ESA extends Heuristic {
         STPMST = new int[solution.size];
         Arrays.fill(STPMST, step);
         
-        int count = 0;
+        @SuppressWarnings("unused")
+		int count = 0;
         ArrayList<Double> deltas = new ArrayList<Double>();
         Solution init = solution.clone();
         for (int i = 0; i < 1000; i++) {

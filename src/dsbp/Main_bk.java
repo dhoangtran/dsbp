@@ -7,7 +7,6 @@ import java.util.*;
 
 import dsbp.algorithm.initialization.*;
 import dsbp.algorithm.heuristic.*;
-import dsbp.algorithm.neighborhood.*;
 import dsbp.model.*;
 import dsbp.util.*;
 

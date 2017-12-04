@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-import dsbp.model.*;
 import dsbp.util.*;
 
 import java.io.BufferedReader;
